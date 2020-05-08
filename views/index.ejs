@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users</title>
+</head>
+<body>
+  <a href="/register">Registrarse</a>
+  <table>
+    <thead>
+    	<tr>
+    	  <th>Name</th>
+    	  <th>Email</th>
+    	</tr>
+    </thead>
+    <tbody>
+    	<% for (var i = 0; i < users.length; i++) { %>
+    	  <tr style="text-align: center;">
+    	    <td><%= users[i].name %></td>
+    	    <td><%= users[i].email %></td>
+    	  </tr>
+    	<% } %>
+    </tbody>
+  </table>
+</body>
+</html>
